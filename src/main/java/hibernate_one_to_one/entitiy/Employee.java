@@ -1,4 +1,4 @@
-package hibernate_test_2.entitiy;
+package hibernate_one_to_one.entitiy;
 
 
 import javax.persistence.*;
