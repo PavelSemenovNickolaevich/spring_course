@@ -62,12 +62,24 @@ public class Test {
 //            System.out.println("Done");
             //************************************************************
 
+//            session = factory.getCurrentSession();
+//            session.beginTransaction();
+//
+//            Child child = session.get(Child.class, 4);
+//            System.out.println(child);
+//            System.out.println(child.getSections());
+//
+//
+//
+//            session.getTransaction().commit();
+//            System.out.println("Done");
+
             session = factory.getCurrentSession();
             session.beginTransaction();
 
-            Child child = session.get(Child.class, 4);
-            System.out.println(child);
-            System.out.println(child.getSections());
+            Section section = session.get(Section.class, 1);
+            session.delete(section);
+
 
 
 
